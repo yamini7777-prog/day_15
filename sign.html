@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="'en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="'viewport" content="width=device-width,inital-scale=1.0">
+    <title>Signup Application</title>
+    <style>
+        .required::after{
+            content:"*";
+            color: rgb(248, 53, 53);
+            font-size:"20px";
+
+        }
+    </style>
+</head>
+
+<body style="border: 2px;">
+    <center>
+        <ins>
+           <img src="./emblem logo.png" height="150"> <h1 >SIGNUP APPLICATION </h1>
+        </ins>
+    </center>
+    <center>
+        <ins>
+            <h2>FIXED DEPOSIT APPLICATION FROM</h2>
+        </ins>
+    </center>
+    <br>
+    <center><table border="0">
+<thead>
+    <th>
+        <fieldset >
+        <legend style="color: darkred;"><b>costumer information</b></legend>
+        <label class="required" for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="enter email" pattern="/[aA-zZ0-9]+@[a-zA-Z]+\.[a-z]{2,}/gm" required>
+        <br>
+        <br>
+        <label  class="required" for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="enter the name" required>
+        <br>
+        <br>
+        <label class="required" for="cellnumber">cellnumber</label>
+        <input type="number" id="cellnumber" name="cellnumber" placeholder="enter the cellnumber" max="10"  required>
+        &emsp;&emsp;&emsp;
+        <label class="required" for="address">address</label>
+        <input type="text" id="address" name="address" placeholder="Renter the address" required>
+        
+       
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend>bank details</legend>
+        <label for="bank name">bank name</label>
+        <input type="text" id="bank name" name="bank name" placeholder="enter the bank name" required>
+        &emsp;&emsp;&emsp;
+        
+        <label for="IFSC code">IFSC code</label>
+        <input type="text" id="IFSC CODE" name="IFSC code" placeholder="enter the IFSC code" required>
+        <br>
+        <br>
+        <label class="required" for="account number">Account number:</label>
+        <input type="number" id="Account number" name="Account number" placeholder="enter account number"
+        minlength="3" maxlength="10" required>
+        &emsp;&emsp;&emsp;
+
+            <label class="required">Select state</label>
+            <select>
+                <option>Telangana</option>
+                <option>kerala</option>
+                <option>andhra pradesh</option>
+                <option>karnataka</option>
+            </select>
+
+    </fieldset>
+    <br>
+    <br>
+
+    <a href="./application.html"><input type="submit"></a>
+    <h3>login</h3>
+
+    </th>
+</thead>
+    </table></center>
+    </table>
+    </body>
+</html>
